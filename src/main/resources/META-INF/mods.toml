@@ -1,0 +1,30 @@
+modLoader = "javafml"
+loaderVersion = "[34,)"
+issueTrackerURL = "https://github.com/cofh/feedback"
+license = "CoFH - Don't Be A Jerk (Learn, Don't Steal)"
+
+[[mods]]
+modId = "nonvflash"
+version = "${file.jarVersion}"
+displayName = "No Night Vision Flashing"
+updateJSONURL = "https://raw.github.com/cofh/version/master/nonvflash/update.json"
+displayURL = "https://teamcofh.com/"
+logoFile = "logo.png"
+credits = "Team CoFH"
+authors = "King Lemming, covers1624"
+description = '''
+No more night vision flashing!
+'''
+[[dependencies.nonvflash]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.16.5,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.nonvflash]]
+modId = "forge"
+mandatory = true
+versionRange = "[36.2.0,)"
+ordering = "AFTER"
+side = "BOTH"

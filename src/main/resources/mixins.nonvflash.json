@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "cofh.nonvflash.mixin",
+  "refmap": "mixins.nonvflash.refmap.json",
+  "target": "@env(DEFAULT)",
+  "compatibilityLevel": "JAVA_8",
+  "client": [
+    "GameRendererMixin"
+  ]
+}
