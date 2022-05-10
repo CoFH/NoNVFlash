@@ -2,20 +2,20 @@ package cofh.nonvflash.mixin;
 
 import cofh.nonvflash.NoNVFlash;
 import net.minecraft.client.renderer.GameRenderer;
-import net.minecraft.entity.LivingEntity;
+import net.minecraft.world.entity.LivingEntity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-import static net.minecraft.potion.Effects.NIGHT_VISION;
+import static net.minecraft.world.effect.MobEffects.NIGHT_VISION;
 
-@Mixin(GameRenderer.class)
+@Mixin (GameRenderer.class)
 public abstract class GameRendererMixin {
 
-    @Inject(
+    @Inject (
             method = "getNightVisionScale",
-            at = @At(value = "HEAD"),
+            at = @At (value = "HEAD"),
             cancellable = true
     )
     private static void onGetNightVisionScale(LivingEntity living, float partialTicks, CallbackInfoReturnable<Float> callback) {
