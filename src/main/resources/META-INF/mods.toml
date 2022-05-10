@@ -18,13 +18,13 @@ No more night vision flashing!
 [[dependencies.no_nv_flash]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.16.5,)"
+versionRange = "[1.18.2,)"
 ordering = "AFTER"
 side = "BOTH"
 
 [[dependencies.no_nv_flash]]
 modId = "forge"
 mandatory = true
-versionRange = "[36.2.0,)"
+versionRange = "[40.1.0,)"
 ordering = "AFTER"
 side = "BOTH"
