@@ -2,7 +2,7 @@ package cofh.nonvflash;
 
 import net.minecraftforge.fml.common.Mod;
 
-@Mod("no_nv_flash")
+@Mod ("no_nv_flash")
 public class NoNVFlash {
 
     public static boolean fadeOut = true;
