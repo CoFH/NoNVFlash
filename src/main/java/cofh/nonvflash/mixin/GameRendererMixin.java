@@ -20,14 +20,14 @@ public abstract class GameRendererMixin {
     )
     private static void onGetNightVisionScale(LivingEntity living, float partialTicks, CallbackInfoReturnable<Float> callback) {
 
-        float i = NoNVFlash.maxBrightness;
-        if (NoNVFlash.fadeOut) {
+        double i = NoNVFlash.maxBrightness.get();
+        if (NoNVFlash.fadeOut.get()) {
             if (living.hasEffect(NIGHT_VISION)) {
                 int duration = living.getEffect(NIGHT_VISION).getDuration();
-                i = duration > NoNVFlash.fadeTicks ? NoNVFlash.maxBrightness : duration * NoNVFlash.fadeRate;
+                i = duration > NoNVFlash.fadeTicks.get() ? NoNVFlash.maxBrightness.get() : duration * NoNVFlash.fadeRate.get();
             }
         }
-        callback.setReturnValue(i);
+        callback.setReturnValue((float) i);
         callback.cancel();
     }
 
