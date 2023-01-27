@@ -18,7 +18,7 @@ No more night vision flashing!
 [[dependencies.no_nv_flash]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.18.2,)"
+versionRange = "[1.18.2,1.19)"
 ordering = "AFTER"
 side = "BOTH"
 
