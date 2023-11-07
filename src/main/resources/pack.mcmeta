@@ -1,7 +1,8 @@
 {
-    "pack": {
-        "description": "CoFH - No Night Vision Flash Resources",
-        "pack_format": 10,
-        "_comment": ""
-    }
+  "pack": {
+    "description": {
+      "translate": "pack.no_nv_flash.description"
+    },
+    "pack_format": 15
+  }
 }
